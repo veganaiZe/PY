@@ -46,6 +46,24 @@ enumerate(iterable[, start=0])  # returns iterable enumerate object, which itsel
 ```
 
 
+---
+
+
+# [Standard Library](https://docs.python.org/3/library/index.html)
+
+## [🔢 Math](https://docs.python.org/3/library/math.html)
+```python
+import math
+
+math.pi
+
+math.ceil(n)
+math.floor(n)
+math.log2(n)
+math.pow(n, p)
+math.sqrt(n)
+```
+
 ## [📚 Collections](https://docs.python.org/3/library/collections.html)
 
 ### [Deque](https://docs.python.org/3/library/collections.html#deque-objects)
