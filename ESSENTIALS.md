@@ -39,6 +39,7 @@ bin(integer[, 'b'])  # binary string; 'b' arg for no prefix
 bool(object)         # True unless __bool__() is False or __len__() is zero; no arg is False
                      # Falsies: None, False, 0, '', (), [], { }, set(), range(0)
 ...
+divmod(a, b)         # returns `(a//b, a%b)` for int
 enumerate(iterable[, start=0])  # returns iterable enumerate object, which itself
                                 # returns tuples w/ count (from `start`) & value (from beginning) each iteration
 ...
