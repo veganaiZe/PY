@@ -35,7 +35,7 @@ abs(number)          # absolute value
 all(iteratble)       # True if all truthy elements or empty
 any(iterator)        # True if any truthy element; False if empty
 ascii(object)        # printable representation; non-ascii characters escaped
-bin(integer[, 'b'])  # binary string; 'b' arg for no prefix
+bin(integer)         # binary string; `format(integer, 'b')` for no prefix
 bool(object)         # True unless __bool__() is False or __len__() is zero; no arg is False
                      # Falsies: None, False, 0, '', (), [], { }, set(), range(0)
 ...
