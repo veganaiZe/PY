@@ -228,10 +228,10 @@ set ^= other       # Update set, keeping elements found in either set, but not b
 
 ```
 
-### [String](https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str)
+### [Str](https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str)
 * [_Methods_](https://docs.python.org/3/library/stdtypes.html#string-methods)
   ```python
-  str.capitalize()
+  str.capitalize()                              # return capitalized copy of string
   str.casefold()  # 3.3+
   str.center(width[, fillchar])
   str.count(sub[, start[, end]])
@@ -256,7 +256,7 @@ set ^= other       # Update set, keeping elements found in either set, but not b
   str.isupper()
   str.join(iterable)
   str.ljust(width[, fillchar])
-  str.lower()
+  str.lower()                      # return lowercased copy of string
   str.lstrip([chars])
   str.maketrans(x[, y[, z]])       # static method
   str.partition(sep)
@@ -279,6 +279,21 @@ set ^= other       # Update set, keeping elements found in either set, but not b
   str.upper()
   str.zfill(width)
   ```
+
+### [String](https://docs.python.org/3/library/string.html)
+```python
+import string
+
+string.ascii_letters    # string of upper & lowercase ascii letters
+string.ascii_lowercase  # string of lowercase ascii letters
+string.ascii_uppercase  # string of lowercase ascii letters
+string.digits           # string of 0 through 9
+string.hexdigits        # string of 0 through 9, a through f, A through F
+string.octdigits        # string of 0 through 7
+string.punctuation      # string of C locale ascii punctuation: !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+string.printable        # string of all printable ascii characters
+string.whitespace       # string of ascii whitespace characters: ' \t\n\r\v\f'
+```
 
 
 ## [🏬 Data Types](https://docs.python.org/3/library/datatypes.html)
