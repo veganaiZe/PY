@@ -248,25 +248,25 @@ set ^= other       # Update set, keeping elements found in either set, but not b
   str.isdecimal()
   str.isdigit()
   str.isidentifier()
-  str.islower()
+  str.islower()                    # return true if all caseable characters are lowercase & there's at least one
   str.isnumeric()
   str.isprintable()
   str.isspace()
   str.istitle()
-  str.isupper()
-  str.join(iterable)
+  str.isupper()                    # return true if all caseable characters are uppercase & there's at least one
+  str.join(iterable)               # return concatenation of strings in iterable; 'separator'.join(it)
   str.ljust(width[, fillchar])
   str.lower()                      # return lowercased copy of string
   str.lstrip([chars])
   str.maketrans(x[, y[, z]])       # static method
-  str.partition(sep)
-  str.removeprefix(prefix, /)      # 3.9+
-  str.removesuffix(suffix, /)      # 3.9+
+  str.partition(sep)               # split into 3-tuple: (part before, separator, part after) or (string, '', '') if not found
+  str.removeprefix(prefix, /)      # return `string[len(prefix):]`; 3.9+
+  str.removesuffix(suffix, /)      # return `string[:-len(suffix)]`; 3.9+
   str.replace(old, new, count=-1)  # `count` as keyword arg in 3.13+
-  str.rfind(sub[, start[, end]])
-  str.rindex(sub[, start[, end]])
-  str.rjust(width[, fillchar])
-  str.rpartition(sep)
+  str.rfind(sub[, start[, end]])   # return highest index substring found at
+  str.rindex(sub[, start[, end]])  # like `.rfind()` but raises ValueError if sub not found
+  str.rjust(width[, fillchar])     # return right justified string
+  str.rpartition(sep)              # like `.partition()` but return split at last occurrence of separator
   str.rsplit(sep=None, maxsplit=-1)
   str.rstrip([chars])
   str.split(sep=None, maxsplit=-1)
