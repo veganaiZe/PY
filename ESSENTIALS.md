@@ -46,6 +46,39 @@ enumerate(iterable[, start=0])  # returns iterable enumerate object, which itsel
 ```
 
 
+## 📖 [Docstrings](https://peps.python.org/pep-0257/)
+```python
+"""Docstrings: first statement inside function|class|module|package.
+
+Anything public facing should have docstrings.
+They are used by `pydoc` and can be accessed via `.__doc__`.
+Indent the entire docstring the same as the quotes on the first line.
+Docstring tools lstrip a minimum of second+ non-blank indentation from
+second+ lines.           Wrap docstrings / comments at 72 characters --|
+                                                 Google says wrap them at 80 --|
+"""
+"""String literals just after docstrings are 'additional docstrings'."""
+
+
+var = val  """attribute docstring"""
+
+
+class Object:
+  var = val  """attribute docstring"""
+
+  def __init__(self):
+    self.var = val  """attribute docstring"""
+
+  def method(self):
+    """Do X and return a list."""
+    ...
+
+
+r"""C:\path\to\location"""
+
+```
+
+
 ---
 
 
