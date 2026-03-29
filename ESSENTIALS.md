@@ -43,6 +43,8 @@ divmod(a, b)         # returns `(a//b, a%b)` for int
 enumerate(iterable[, start=0])  # returns iterable enumerate object, which itself
                                 # returns tuples w/ count (from `start`) & value (from beginning) each iteration
 ...
+sorted(iterable, key=None, reverse=False)  # returns new sorted list; stable; `key` is single arg function to extract comparison key
+...
 ```
 
 
