@@ -29,25 +29,6 @@ _A quick reference for Python 3 essentials_
 | [`:=`](https://peps.python.org/pep-0572/) | assignment expression (walrus operator) v3.8+
 
 
-## [🛠️ Built-in Functions](https://docs.python.org/3/library/functions.html)
-```python
-abs(number)          # absolute value
-all(iteratble)       # True if all truthy elements or empty
-any(iterator)        # True if any truthy element; False if empty
-ascii(object)        # printable representation; non-ascii characters escaped
-bin(integer)         # binary string; `format(integer, 'b')` for no prefix
-bool(object)         # True unless __bool__() is False or __len__() is zero; no arg is False
-                     # Falsies: None, False, 0, '', (), [], { }, set(), range(0)
-...
-divmod(a, b)         # returns `(a//b, a%b)` for int
-enumerate(iterable[, start=0])  # returns iterable enumerate object, which itself
-                                # returns tuples w/ count (from `start`) & value (from beginning) each iteration
-...
-sorted(iterable, key=None, reverse=False)  # returns new sorted list; stable; `key` is single arg function to extract comparison key
-...
-```
-
-
 ## 📖 [Docstrings](https://peps.python.org/pep-0257/)
 ```python
 """Docstrings: first statement inside function|class|module|package.
@@ -78,6 +59,25 @@ class Object:
 
 r"""C:\path\to\location"""
 
+```
+
+
+## [🛠️ Built-in Functions](https://docs.python.org/3/library/functions.html)
+```python
+abs(number)          # absolute value
+all(iteratble)       # True if all truthy elements or empty
+any(iterator)        # True if any truthy element; False if empty
+ascii(object)        # printable representation; non-ascii characters escaped
+bin(integer)         # binary string; `format(integer, 'b')` for no prefix
+bool(object)         # True unless __bool__() is False or __len__() is zero; no arg is False
+                     # Falsies: None, False, 0, '', (), [], { }, set(), range(0)
+...
+divmod(a, b)         # returns `(a//b, a%b)` for int
+enumerate(iterable[, start=0])  # returns iterable enumerate object, which itself
+                                # returns tuples w/ count (from `start`) & value (from beginning) each iteration
+...
+sorted(iterable, key=None, reverse=False)  # returns new sorted list; stable; `key` is single arg function to extract comparison key
+...
 ```
 
 
