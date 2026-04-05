@@ -266,17 +266,17 @@ set ^= other       # Update set, keeping elements found in either set, but not b
 ### [Str](https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str)
 * [_Methods_](https://docs.python.org/3/library/stdtypes.html#string-methods)
   ```python
-  str.capitalize()                              # return capitalized copy of string
-  str.casefold()  # 3.3+
+  str.capitalize()                # return capitalized copy of string
+  str.casefold()                  # 3.3+
   str.center(width[, fillchar])
   str.count(sub[, start[, end]])
   str.encode(encoding='utf-8', errors='strict')  # keyword args in 3.1+
   str.endswith(suffix[, start[, end]])
   str.expandtabs(tabsize=8)
-  str.find(sub[, start[, end]])
+  str.find(sub[, start[, end]])   # return -1 if substring not found
   str.format(*args, **kwargs)
-  str.format_map(mapping, /)  # 3.2+
-  str.index(sub[, start[, end]])
+  str.format_map(mapping, /)      # 3.2+
+  str.index(sub[, start[, end]])  # raise ValueError if substring not found
   str.isalnum()
   str.isalpha()
   str.isascii()  # 3.7+
