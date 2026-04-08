@@ -80,7 +80,7 @@ sorted(iterable, key=None, reverse=False)  # returns new sorted list; stable; `k
 staticmethod(function)    # `@staticmethod` decorator function: `method = staticmethod(function)`; no `self` or `cls` arg
 str(object[, encoding='utf-8', errors='strict'])  # returns string version of `object`
 sum(iterable[, start=0])  # returns sum of `start` + items in `iterable` from left to right; `start` as keyword arg in 3.8+
-super()                   # delegates method calls / attribute lookups to parent or sibiling class
+super()                   # delegates method calls / attribute lookups to parent or sibling class
 tuple(iterable=())        # returns immutable sequence tuple
 ...
 ```
