@@ -370,7 +370,7 @@ pprint.pprint(object,
 * [Functional Programming Modules](https://docs.python.org/3/library/functional.html)
   - [`itertools`](https://docs.python.org/3/library/itertools.html)
 
-## [⚙️ Python Runtime Services](https://docs.python.org/3/library/python.html)
+## [⚙️ Runtime Services](https://docs.python.org/3/library/python.html)
 
 ### [sys](https://docs.python.org/3/library/sys.html)
 ```python
@@ -387,6 +387,17 @@ sys.stdin
 sys.stdout
 sys.stderr
 sys.stdlib_module_names
+```
+
+
+## 🗣️ Statements
+### [`try`](https://docs.python.org/3/reference/compound_stmts.html#the-try-statement)
+```python
+try:
+  ...
+[except [(type1, type2, ...) [as value]]:]  # Handles type or all/other exceptions
+[else:]     # Runs if no exception's raised; requires at least one `except` clause
+[finally:]  # Always runs; required if there's no `except` clause
 ```
 
 
