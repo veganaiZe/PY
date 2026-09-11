@@ -428,4 +428,4 @@ sum(timeit.repeat(               # use `sum()` instead of `min()`
 
 ## 📋 Notes
 
-* Python 3.11+ replaces [Timsort](https://en.wikipedia.org/wiki/Timsort) with [Powersort](https://en.wikipedia.org/wiki/Powersort)
+* Python 3.11+ upgrades [Timsort](https://en.wikipedia.org/wiki/Timsort) to [Powersort](https://en.wikipedia.org/wiki/Powersort)
